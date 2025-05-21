@@ -21,9 +21,9 @@ export default function ContactPage() {
             <p className={styles.subtext}>Homepage</p> 
         </button>
         <h1 className={styles.name}>Contact John James</h1>
-        <button className={styles.filler} onClick={returnHandler}>
-            <FontAwesomeIcon icon={faHouse} /> 
-            <p>Homepage</p> 
+        <button className={styles.filler}>
+            <FontAwesomeIcon className={styles.house} icon={faHouse} /> 
+            <p className={styles.subtext}>Homepage</p> 
         </button>
         
     </div>

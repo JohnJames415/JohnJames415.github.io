@@ -13,6 +13,7 @@
 }
 
 .h3 {
+    color: rgb(255, 255, 255);
     font-size: 48px;
     padding-left: 75px;
     padding-top: 10px;
@@ -21,6 +22,7 @@
 }
 
 .h4 {
+    color: rgb(255, 255, 255);
     font-size: 32px;
     padding-left: 100px;
     padding-top: 10px;
@@ -29,6 +31,7 @@
 }
 
 .ul {
+  color: rgb(255, 255, 255);
   list-style-type: disc;
   list-style-position: inside; 
   padding-left: 125px; 
