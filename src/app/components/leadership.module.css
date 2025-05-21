@@ -1,0 +1,42 @@
+.hr {
+  position: relative;
+  z-index: 1;
+  border-width: 1px;
+  color: #313131;
+  background-color: #313131;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 1px;
+  border-radius: 4px;
+}
+
+.h3 {
+    font-size: 48px;
+    padding-left: 75px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.h4 {
+    font-size: 32px;
+    padding-left: 100px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.ul {
+  list-style-type: disc;
+  list-style-position: inside; 
+  padding-left: 125px; 
+}
+
+.ul > li {
+  font-size: 16px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 1;
+}

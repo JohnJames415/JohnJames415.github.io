@@ -1,0 +1,142 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000;
+}
+
+.background::before {
+  content: "";
+  background-image: url('/images/Cosmos.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8; /* <-- Control opacity here */
+  z-index: 0;
+}
+
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: white;
+    border-width: 3px;
+    position: relative;
+    z-index: 1;
+    margin: 10px 20px;
+    height: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20;
+}
+
+.nameContainer > h1 {
+    font-size: 48px;
+    -webkit-text-stroke:2px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.nameContainer > button {
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 10px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.subtext {
+    font-size: 16;
+}
+
+.house {
+    font-size: 48px;
+    margin-bottom: 4px;
+}
+
+.nameContainer > button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.filler {
+    font-size: 48px;
+    opacity: 0;
+}
+
+.formContainer {
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    align-items: left;
+    justify-content: space-evenly;
+  }
+
+  .formContainer > label {
+    cursor: text;
+    font-size: 48px;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke:2px rgb(255, 255, 255);
+  }
+
+  .subHeading {
+    font-size: 12px;
+  }
+
+  .smallInput {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: white;
+    border-width: 2px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    height: 36px;
+    width: 900px;
+    color: black;
+    font-size: 24px;
+}
+
+  .bigInput {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: white;
+    border-width: 2px;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 36px;
+    color: black;
+    font-size: 24px;
+    width: 900px;
+    height: 300px;
+}
+
+.button {
+    margin-top: 15px;
+    height: 60px;
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    font-size: 30px;
+    transition: 0.2s;
+    border-radius: 6px;
+    border-width: 2px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-color: white;
+}

@@ -1,0 +1,42 @@
+.menu {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-toggle {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-items {
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transform-origin: top;
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-items.open {
+  max-height: 500px; /* adjust based on content */
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.menu-items li {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  position: relative;
+  z-index: 1;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #555;
+}

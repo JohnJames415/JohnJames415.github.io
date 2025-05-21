@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainContainer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 0.25rem; /* gap-4 = 1rem */
+  padding-left: 1rem;  /* px-4 = 1rem left/right */
+  padding-right: 1rem;
+  text-align: center;
+}
+
+#nameHeadingPrefix {
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  line-height: 1.25;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+  -webkit-text-stroke:2px rgb(255, 255, 255);
+
+}
+
+#nameHeading {
+    font-size: 6.75rem;
+    margin-top: 0;
+    line-height: 1;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke:2px rgb(255, 255, 255);
+}
+
+#mainDiv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+#bgVid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* bg-black/50 */
+  z-index: 0;
+}
+
+#topNav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.SectionTitle {
+    font-size: 64px;
+    padding-left: 50px;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+#copyrightDiv {
+    transform: translateY(14rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#copyrightText {
+    padding: 10px 0;
+    font-size: 16px;
+    color:#707070;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,57 @@
+.p {
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.button {
+  color: rgb(0, 137, 228);
+  transition: transform 0.2s ease, color 0.2s ease;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  transform-origin: left;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+}
+
+.github {
+    color: rgb(0, 137, 228);
+    transition: transform 0.2s ease, color 0.2s ease;
+    position: relative;
+    z-index: 1;
+    transform-origin: center;
+    font-size: 75px;
+}
+
+.linkedin {
+    color: rgb(0, 137, 228);
+    transition: transform 0.2s ease, color 0.2s ease;
+    position: relative;
+    z-index: 1;
+    transform-origin: center;
+    padding-left: 30px;
+    font-size: 75px;
+}
+
+.github:hover {
+    color: rgb(0, 153, 255);
+    transform: scale(1.1);
+}
+
+.linkedin:hover {
+    color: rgb(0, 153, 255);
+    transform: scale(1.1);
+}
+
+.linkcontainer {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}

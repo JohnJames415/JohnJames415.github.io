@@ -1,0 +1,34 @@
+.background {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000;
+}
+
+.background::before {
+  content: "";
+  background-image: url('/images/BGSpace.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.16; /* <-- Control opacity here */
+  z-index: 0;
+}
+
+
+.linebreak {
+  position: relative;
+  z-index: 1;
+  border-width: 2px;
+  color: #313131;
+  background-color: #313131;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  height: 3px;
+  border-radius: 4px;
+}
